@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-13-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-13-0 http://www.eiffel.com/developers/xml/configuration-1-13-0.xsd" name="jj_containers" uuid="BACF2C54-C8D8-4C99-826C-D73A3B069BF6" library_target="jj_containers">
+	<target name="jj_containers">
+		<root all_classes="true"/>
+		<option void_safety="all"/>
+		<library name="base-safe" location="$ISE_LIBRARY\library\base\base-safe.ecf"/>
+		<cluster name="jj_containers" location=".\" recursive="true">
+			<file_rule>
+					<exclude>/demo$</exclude>
+					<exclude>/docs$</exclude>
+					<exclude>/EIFGENs$</exclude>
+					<exclude>/CVS$</exclude>
+					<exclude>/.svn$</exclude>
+					<exclude>/.git$</exclude>
+			</file_rule>
+		</cluster>
+	</target>
+</system>
