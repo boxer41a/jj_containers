@@ -4,11 +4,10 @@ note
 		occurance of an item after the *beginning* of the list instead of after
 		the current cursor postion.
 		]"
-	author:		"Jimmy J. Johnson"
-	copyright:	"Copyright 2009, Jimmy J. Johnson"
-	URL: 		"$URL: $"
-	date:		"$Date: 2014-01-11 06:39:40 -0500 (Sat, 11 Jan 2014) $"
-	revision:	"$Revision: 21 $"
+	author:    "Jimmy J. Johnson"
+	date:      "10/27/21"
+	copyright: "Copyright (c) 2021, Jimmy J. Johnson"
+	license:   "Eiffel Forum v2 (http://www.eiffel.com/licensing/forum.txt)"
 
 class
 	JJ_ARRAYED_LIST [G]
@@ -82,7 +81,9 @@ feature -- Basic operations
 			start
 			search (a_item)
 			check
-				at_correct_item: equal (item, a_item)
+				object_found: object_comparison implies a_item ~ item
+				item_found: not object_comparison implies a_item = item
+					-- because of pecondition "has_item"
 			end
 			list_replace (a_new_item)
 			go_i_th (i)
@@ -98,7 +99,7 @@ feature -- Status report
 			-- Uses object comparison to check sameness.
 		local
 			i: INTEGER_32
-			a: detachable ANY
+			a: G
 		do
 				-- Simple check if all are same as the first.
 				-- Assume true until finding a contradiction
@@ -117,7 +118,7 @@ feature -- Status report
 			-- Uses object comparison not reference comparison
 		local
 			i, j: INTEGER_32
-			a: detachable ANY
+			a: G
 		do
 				-- Must check all against each of the others.
 				-- Assume true until finding two that are the same.

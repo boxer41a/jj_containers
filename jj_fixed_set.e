@@ -1,12 +1,11 @@
-note
+﻿note
 	description: "[
 		A set implemented as an array that cannot resize.
 		]"
-	author:		"Jimmy J. Johnson"
-	copyright:	"Copyright 2009, Jimmy J. Johnson"
-	URL: 		"$URL: file:///F:/eiffel_repositories/jj_support/trunk/jj_containers/jj_fixed_set.e $"
-	date:		"$Date: 2014-01-21 19:47:20 -0500 (Tue, 21 Jan 2014) $"
-	revision:	"$Revision: 23 $"
+	author:    "Jimmy J. Johnson"
+	date:      "10/27/21"
+	copyright: "Copyright (c) 2021, Jimmy J. Johnson"
+	license:   "Eiffel Forum v2 (http://www.eiffel.com/licensing/forum.txt)"
 
 class
 	JJ_FIXED_SET [G]
@@ -15,6 +14,7 @@ inherit
 
 	FIXED [G]
 		rename
+			has as has alias "∋",
 			full as is_full
 		undefine
 			copy,

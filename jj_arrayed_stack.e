@@ -3,11 +3,10 @@ note
 		An {ARRAYED_STACK} which allows inspection of any item, not just the
 		top one.  Items are still added to and removed from the top.
 		]"
-	author:		"Jimmy J. Johnson"
-	copyright:	"Copyright 2009, Jimmy J. Johnson"
-	URL: 		"$URL: $"
-	date:		"$Date: 2014-03-17 21:14:08 -0400 (Mon, 17 Mar 2014) $"
-	revision:	"$Revision: 36 $"
+	author:    "Jimmy J. Johnson"
+	date:      "10/27/21"
+	copyright: "Copyright (c) 2021, Jimmy J. Johnson"
+	license:   "Eiffel Forum v2 (http://www.eiffel.com/licensing/forum.txt)"
 
 class
 	JJ_ARRAYED_STACK [G]

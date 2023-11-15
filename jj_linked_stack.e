@@ -3,11 +3,10 @@ note
 		A {LINKED_STACK} which allows inspection of any item, not just the
 		top one.  Items are still added to and removed from the top.
 		]"
-	author:		"Jimmy J. Johnson"
-	copyright:	"Copyright 2009, Jimmy J. Johnson"
-	URL: 		"$URL: $"
-	date:		"$Date: 2014-03-11 23:16:07 -0400 (Tue, 11 Mar 2014) $"
-	revision:	"$Revision: 35 $"
+	author:    "Jimmy J. Johnson"
+	date:      "10/27/21"
+	copyright: "Copyright (c) 2021, Jimmy J. Johnson"
+	license:   "Eiffel Forum v2 (http://www.eiffel.com/licensing/forum.txt)"
 
 class
 	JJ_LINKED_STACK [G]

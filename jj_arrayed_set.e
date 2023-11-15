@@ -1,12 +1,11 @@
-note
+﻿note
 	description: "[
 		ARRAYED_SET with added feature for replacing an existing item.
 		]"
-	author:		"Jimmy J. Johnson"
-	copyright:	"Copyright 2009, Jimmy J. Johnson"
-	URL: 		"$URL: $"
-	date:		"$Date: 2014-10-31 18:17:42 -0700 (Fri, 31 Oct 2014) $"
-	revision:	"$Revision: 49 $"
+	author:    "Jimmy J. Johnson"
+	date:      "10/27/21"
+	copyright: "Copyright (c) 2021, Jimmy J. Johnson"
+	license:   "Eiffel Forum v2 (http://www.eiffel.com/licensing/forum.txt)"
 
 class
 	JJ_ARRAYED_SET [G]
@@ -26,6 +25,7 @@ inherit
 				capacity,
 				i_th
 		undefine
+			make_from_iterable,
 --			put,
 			prune,
 			array_item,
@@ -36,6 +36,8 @@ inherit
 		end
 
 	JJ_ARRAYED_LIST [G]
+		rename
+			has as has alias "∋"
 		undefine
 			put,
 			sequence_put,

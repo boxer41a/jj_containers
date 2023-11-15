@@ -2,11 +2,10 @@ note
 	description: "[
 		An array that can be sorted and cannot resize.
 		]"
-	author:		"Jimmy J. Johnson"
-	copyright:	"Copyright 2009, Jimmy J. Johnson"
-	URL: 		"$URL: $"
-	date:		"$Date: 2014-06-08 19:47:06 -0400 (Sun, 08 Jun 2014) $"
-	revision:	"$Revision: 43 $"
+	author:    "Jimmy J. Johnson"
+	date:      "10/27/21"
+	copyright: "Copyright (c) 2021, Jimmy J. Johnson"
+	license:   "Eiffel Forum v2 (http://www.eiffel.com/licensing/forum.txt)"
 
 class
 	JJ_SORTABLE_FIXED_ARRAY [G -> COMPARABLE]

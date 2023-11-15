@@ -1,18 +1,17 @@
-note
+﻿note
 	description: "[
 		A set, implemented as an array, whose items *can* be ordered based on
 		a total-order relationship.
 		Feature `set_ordered' causes `extend' to place an item into the array
-		at its proper sort order position.
+		at its proper sort-order position.
 		Feature `prune' is redefined in {JJ_ARRAYED_LIST} to remove the first
-		occurrence of an item at or after the beginning of thelist, not after
+		occurrence of an item at or after the beginning of the list, not after
 		the	current position, as in {ARRAYED_LIST}.
 		]"
-	author:		"Jimmy J. Johnson"
-	copyright:	"Copyright 2009, Jimmy J. Johnson"
-	URL: 		"$URL: $"
-	date:		"$Date: 2014-01-14 19:56:16 -0500 (Tue, 14 Jan 2014) $"
-	revision:	"$Revision: 22 $"
+	author:    "Jimmy J. Johnson"
+	date:      "10/27/21"
+	copyright: "Copyright (c) 2021, Jimmy J. Johnson"
+	license:   "Eiffel Forum v2 (http://www.eiffel.com/licensing/forum.txt)"
 
 class
 	JJ_SORTABLE_SET [G -> COMPARABLE]
@@ -34,9 +33,7 @@ inherit
 			is_inserted,
 			has
 		redefine
-			extend,
-			prune,
-			array_item
+			extend
 		select
 			put,
 			extend
@@ -44,6 +41,7 @@ inherit
 
 	JJ_SORTABLE_ARRAY [G]
 		rename
+			has as has alias "∋",
 			extend as jj_sl_extend
 		export {ANY}
 			i_th

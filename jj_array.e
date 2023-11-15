@@ -2,11 +2,10 @@ note
 	description: "[
 		This class adds some useful features to the ARRAY class.
 		]"
-	author:		"Jimmy J. Johnson"
-	copyright:	"Copyright 2010, Jimmy J. Johnson"
-	URL: 		"$URL: $"
-	date:		"$Date: 2012-03-14 00:40:22 -0400 (Wed, 14 Mar 2012) $"
-	revision:	"$Revision: 9 $"
+	author:    "Jimmy J. Johnson"
+	date:      "10/27/21"
+	copyright: "Copyright (c) 2021, Jimmy J. Johnson"
+	license:   "Eiffel Forum v2 (http://www.eiffel.com/licensing/forum.txt)"
 
 class
 	JJ_ARRAY [G]
@@ -114,7 +113,7 @@ feature -- Status report
 			-- Uses object comparison to check sameness.
 		local
 			i: INTEGER
-			a: detachable ANY
+			a: G
 		do
 				-- Simple check if all are same as the first
 				-- Assume true until finding a contradiction
@@ -133,7 +132,7 @@ feature -- Status report
 			-- Uses object comparison not reference comparison.
 		local
 			i, j: INTEGER_32
-			a: detachable ANY
+			a: G
 		do
 				-- Must check all against each of the others.
 				-- Assume true until finding two that are the same.

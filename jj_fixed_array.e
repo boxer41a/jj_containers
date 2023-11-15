@@ -2,11 +2,10 @@ note
 	description: "[
 		An arrayed list that cannot change size.
 		]"
-	author:		"Jimmy J. Johnson"
-	copyright:	"Copyright 2014, Jimmy J. Johnson"
-	URL: 		"$URL: $"
-	date:		"$Date: 2011-03-21 23:11:57 -0400 (Mon, 21 Mar 2011) $"
-	revision:	"$Revision: 7 $"
+	author:    "Jimmy J. Johnson"
+	date:      "10/27/21"
+	copyright: "Copyright (c) 2021, Jimmy J. Johnson"
+	license:   "Eiffel Forum v2 (http://www.eiffel.com/licensing/forum.txt)"
 
 class
 	JJ_FIXED_ARRAY [G]

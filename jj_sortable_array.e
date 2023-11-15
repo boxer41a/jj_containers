@@ -7,11 +7,10 @@ note
 		occurrence of an item at or after the beginning of the list, not after
 		the	current position, as in {ARRAYED_LIST}.
 		]"
-	author:		"Jimmy J. Johnson"
-	copyright:	"Copyright 2009, Jimmy J. Johnson"
-	URL: 		"$URL: $"
-	date:		"$Date: 2014-06-08 19:47:06 -0400 (Sun, 08 Jun 2014) $"
-	revision:	"$Revision: 43 $"
+	author:    "Jimmy J. Johnson"
+	date:      "10/27/21"
+	copyright: "Copyright (c) 2021, Jimmy J. Johnson"
+	license:   "Eiffel Forum v2 (http://www.eiffel.com/licensing/forum.txt)"
 
 class
 	JJ_SORTABLE_ARRAY [G -> COMPARABLE]
@@ -106,8 +105,6 @@ feature -- Query
 			-- The position of `a_item' in Current or the position where
 			-- it would be inserted.  Sets `was_found' if `a_item' was
 			-- in Current.
-		require
-			is_current_searchable: not is_inserting_ordered or else is_sorted
 		local
 			pos: INTEGER
 			low, mid, high: INTEGER
@@ -192,6 +189,8 @@ feature -- Basic operations
 					insert (a_item, i)
 				end
 			end
+		ensure then
+			still_sorted: is_inserting_ordered implies is_sorted
 		end
 
 	put (a_item: like item)
